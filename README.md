@@ -1,3 +1,3 @@
 # LandingPageOfWebDeveloper
 
-![screen].(screenShot.PNG)
+![screen](screenShot.PNG)
