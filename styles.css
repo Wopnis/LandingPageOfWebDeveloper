@@ -266,6 +266,13 @@ header.active #toggle:after {
 /* s-price section========================================================== */
 .s-price {
   overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(44, 38, 38, 0.652);
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  transition: all .5s ease;
 }
 
 .price-container {
