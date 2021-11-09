@@ -1,7 +1,7 @@
-/* body {
+body {
   overflow-x: hidden;
   overflow-y: hidden;
-} */
+}
 
 .icons8-telegram-app {
   display: inline-block;
@@ -34,7 +34,8 @@
   background: url('./img/screen-1.jpg');
   background-size: cover;
   background-position: center;
-  padding: 100px;
+  padding: 150px;
+  padding-top: 200px;
   transition: all .5s ease;
   display: flex;
   align-items: center;
@@ -217,7 +218,9 @@ header.active #toggle:after {
 .s-about {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: url('./img/screen-2.jpg');
   background-size: cover;
   background-position: center;
@@ -231,14 +234,14 @@ header.active #toggle:after {
   transform: translateX(-400px);
 }
 
-.s-about .overlay {
+/* .s-about .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(17, 17, 17, 0.7);
-}
+} */
 
 .about-content h2 {
   color: #000;
@@ -256,6 +259,7 @@ header.active #toggle:after {
 .about-content p.active {
   padding-left: 250px;
   width: 500px;
+  transform: translateY(-180px);
   transition: all .1s ease;
 }
 
@@ -266,12 +270,13 @@ header.active #toggle:after {
 /* s-price section========================================================== */
 .s-price {
   overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
   min-height: 100vh;
   background-color: rgba(44, 38, 38, 0.652);
   background-size: cover;
   background-position: center;
-  padding: 200px;
+  padding-bottom: 30px;
   transition: all .5s ease;
 }
 
@@ -314,7 +319,7 @@ header.active #toggle:after {
 }
 
 .price-slide.activated {
-  flex: 13;
+  flex: 10;
 }
 
 .price-slide.activated h3 {
@@ -343,7 +348,6 @@ header.active #toggle:after {
 
 .s-contacts h2 {
   display: block;
-  text-align: center;
   padding: 10px;
 }
 
@@ -362,6 +366,23 @@ header.active #toggle:after {
   transition: all .1s ease;
 }
 
+
+/* animations:=============================================================== */
+
+.section-appear {
+  display: block;
+  animation: showSection 0.5s linear forwards;
+}
+
+@keyframes showSection {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
 /* media-querries=============================================================== */
@@ -389,6 +410,7 @@ header.active #toggle:after {
   }
 
   .s-about {
+    padding-top: 80px;
     padding-left: 50px;
   }
 

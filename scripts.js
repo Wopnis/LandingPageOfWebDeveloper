@@ -62,3 +62,23 @@ function removeActiveClass() {
     slide.classList.remove('activated');
   })
 };
+
+function replaceScreens(id) {
+  const screen = document.getElementById(id);
+  sections.forEach((section) => {
+    section.style.display = 'none';
+    screen.style.display = 'block';
+    toggleMenu();
+  })
+}
+
+function changeScreen() {
+  links = document.querySelectorAll('.navLink');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      replaceScreens(e.target.dataset.link)
+    })
+  });
+};
+changeScreen();

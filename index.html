@@ -62,7 +62,7 @@
     <div id="toggle" onclick="toggleMenu();"></div>
   </header>
 
-  <section class="s-home">
+  <section class="s-home" id="firstScreen">
     <div class="home-content">
       <h1>
         Меня зовут <span>Константин</span>.<br>
@@ -84,7 +84,7 @@
     </ul>
   </section>
 
-  <section class="s-about">
+  <section class="s-about" id="secondScreen">
     <!-- <div class="overlay"></div> -->
     <div class="about-content">
       <h2>Обо мне</h2>
@@ -98,11 +98,11 @@
   </section>
   <!-- /.s-about -->
 
-  <section class="s-works">
+  <section class="s-works" id="thirdScreen">
 
   </section>
 
-  <section class="s-price">
+  <section class="s-price" id="fourthScreen">
     <div class="price-container">
       <div class="price-slide" style="background-image: url('./img/prices-img/landing-page.jpg');">
         <h3>Landing-page</h3>
@@ -132,7 +132,7 @@
     </div>
   </section>
 
-  <section class="s-contacts">
+  <section class="s-contacts" id="fithScreen">
     <div class="contacts-content">
       <h2>Свяжитесь со мной удобным для Вас способом</h2>
       <h4><a class="contacts__phone-link" href="tel:+375295048580"><span>+375 29 504 85
@@ -145,11 +145,11 @@
 
   <div class="navigation">
     <ul class="tableOfContent">
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Обо мне</a></li>
-      <li><a href="#">Примеры работ</a></li>
-      <li><a href="#">Прайс - лист</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a class="navLink" data-link="firstScreen" href="#">Главная</a></li>
+      <li><a class="navLink" data-link="secondScreen" href="#">Обо мне</a></li>
+      <li><a class="navLink" data-link="thirdScreen" href="#">Примеры работ</a></li>
+      <li><a class="navLink" data-link="fourthScreen" href="#">Прайс - лист</a></li>
+      <li><a class="navLink" data-link="fithScreen" href="#">Контакты</a></li>
     </ul>
   </div>
   <!-- /.navigation -->
