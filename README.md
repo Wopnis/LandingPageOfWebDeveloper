@@ -1,3 +1,3 @@
 # LandingPageOfWebDeveloper
 
-![WEBDEV-PORTFOLIO](screenShot.PNG)
+!(screenShot.PNG)
