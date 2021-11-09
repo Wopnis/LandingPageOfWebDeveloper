@@ -12,6 +12,7 @@ window.addEventListener('load', () => {
 
 const main = document.querySelector('body');
 const homeSection = document.querySelector('.s-home');
+const aboutMeBtn = document.querySelector('.aboutMeBtn');
 const navMenu = document.querySelector('.navigation');
 const tableOfContent = document.querySelector('.tableOfContent');
 const homeSectionTitle = document.querySelector('.s-home h1');
@@ -24,7 +25,8 @@ const contactsBlock = document.querySelector('.s-contacts');
 const contactsTitle = document.querySelector('.s-contacts h2');
 const sections = document.querySelectorAll('section');
 
-// console.log(sections);
+console.log(sections);
+console.log(sections[1]);
 
 function toggleActive(elem) {
   elem.classList.toggle('active');
@@ -49,11 +51,11 @@ function toggleMenu() {
   toggleActive(contactsTitle);
 };
 
+
 for (const slide of slides) {
   slide.addEventListener('click', () => {
     removeActiveClass()
     slide.classList.add('activated');
-
   })
 };
 
@@ -82,3 +84,12 @@ function changeScreen() {
   });
 };
 changeScreen();
+
+aboutMeBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  sections.forEach((section) => {
+    section.style.display = 'none';
+    sections[1].style.display = 'block';
+    // toggleMenu();
+  });
+});
