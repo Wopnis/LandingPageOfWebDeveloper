@@ -25,8 +25,8 @@ const contactsBlock = document.querySelector('.s-contacts');
 const contactsTitle = document.querySelector('.s-contacts h2');
 const sections = document.querySelectorAll('section');
 
-console.log(sections);
-console.log(sections[1]);
+// console.log(sections);
+// console.log(sections[1]);
 
 function toggleActive(elem) {
   elem.classList.toggle('active');
@@ -92,4 +92,10 @@ aboutMeBtn.addEventListener('click', (e) => {
     sections[1].style.display = 'block';
     // toggleMenu();
   });
+});
+
+document.addEventListener('keyup', function (event) {
+  if (event.code == 'Space') {
+    toggleMenu();
+  }
 });
