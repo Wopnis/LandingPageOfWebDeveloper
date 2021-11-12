@@ -366,6 +366,17 @@ header.active #toggle:after {
   transition: all .1s ease;
 }
 
+.footer-icons {
+  display: flex;
+  padding: 30px;
+  padding-left: 4em;
+}
+
+.footer-icons li {
+  list-style-type: none;
+  padding: 10px;
+}
+
 
 /* animations:=============================================================== */
 
@@ -397,7 +408,7 @@ header.active #toggle:after {
   }
 
   .s-about {
-    padding: 110px;
+    /* padding: 110px; */
     padding-left: 250px;
   }
 

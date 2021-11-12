@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
   }, 600)
 });
 
-//toggle menu
+//varibles
 
 const main = document.querySelector('body');
 const homeSection = document.querySelector('.s-home');
@@ -27,6 +27,8 @@ const sections = document.querySelectorAll('section');
 
 // console.log(sections);
 // console.log(sections[1]);
+
+//toggle menu
 
 function toggleActive(elem) {
   elem.classList.toggle('active');
@@ -51,6 +53,7 @@ function toggleMenu() {
   toggleActive(contactsTitle);
 };
 
+//price slider 
 
 for (const slide of slides) {
   slide.addEventListener('click', () => {
@@ -64,6 +67,8 @@ function removeActiveClass() {
     slide.classList.remove('activated');
   })
 };
+
+//change screens
 
 function replaceScreens(id) {
   const screen = document.getElementById(id);
@@ -85,6 +90,8 @@ function changeScreen() {
 };
 changeScreen();
 
+//about me btn
+
 aboutMeBtn.addEventListener('click', (e) => {
   e.preventDefault();
   sections.forEach((section) => {
@@ -93,6 +100,8 @@ aboutMeBtn.addEventListener('click', (e) => {
     // toggleMenu();
   });
 });
+
+//space-btn control
 
 document.addEventListener('keyup', function (event) {
   if (event.code == 'Space') {
