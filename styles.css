@@ -432,7 +432,9 @@ h2.works-title:after {
 
 .s-contacts h2 {
   display: block;
+  width: 700px;
   padding: 10px;
+  text-align: center;
 }
 
 .s-contacts h4 {
