@@ -41,6 +41,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./magnific-popup.css">
   <link rel="stylesheet" href="./reset-css.css">
   <link rel="stylesheet" href="./preloader.css">
   <link rel="stylesheet" href="./styles.css">
@@ -99,7 +100,41 @@
   <!-- /.s-about -->
 
   <section class="s-works" id="thirdScreen">
-
+    <h2 class="works-title">Некоторые из моих работ :</h2>
+    <div class="works-list">
+      <a href="./img/galery/hosting.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/hosting.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/slider.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/slider.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/portfolio-landing.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/portfolio-landing.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/taxi.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/taxi.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/game.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/game.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/e-shop.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/e-shop.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/repaire-flats.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/repaire-flats.jpg" alt="hosting-company landing page">
+      </a>
+      <a href="./img/galery/3-d-landing.jpg" class="works-item">
+        <div class="works-item-hover">ПОСМОТРЕТЬ</div>
+        <img src="./img/galery/3-d-landing.jpg" alt="hosting-company landing page">
+      </a>
+    </div>
   </section>
 
   <section class="s-price" id="fourthScreen">
@@ -167,7 +202,17 @@
     </ul>
   </div>
   <!-- /.navigation -->
-
+  <script src="./libs/jquery-3.6.0.js"></script>
+  <script src="./libs/jquery.magnific-popup.js"></script>
+  <script>
+    $(".works-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true,
+      }
+    });
+  </script>
   <script src="./scripts.js"></script>
 </body>
 

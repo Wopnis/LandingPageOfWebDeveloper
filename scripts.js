@@ -28,6 +28,15 @@ const sections = document.querySelectorAll('section');
 // console.log(sections);
 // console.log(sections[1]);
 
+//scroll reject====================
+window.addEventListener('load', (e) => {
+  e.preventDefault();
+  sections.forEach((section) => {
+    section.style.display = 'none';
+    sections[0].style.display = 'block';
+  });
+})
+
 //toggle menu
 
 function toggleActive(elem) {
